@@ -28,7 +28,7 @@
 
 // and we want to make a copy of it.
 const team = players;
-console.log(players, team)
+// console.log(players, team)
 
 // You might think we can just do something like this:
 // players[4] = 'Jay';
@@ -52,7 +52,7 @@ const team3 = [].concat(players);
 // or use the new ES6 Spread
 const team4 = [...players];
 team4[2] = 'Anil';
-console.log(team4);
+// console.log(team4);
 
 const team5 = Array.from(players)
 
@@ -65,6 +65,7 @@ const person = {
   name: 'Prabhat',
   age: 20
 };
+
 
 // and think we make a copy:
 // const captian = person;
@@ -88,8 +89,8 @@ const prabhu = {
         books : 'Self-help'
     }
 }
-console.clear();
-console.log(prabhu);
+// console.clear();
+// console.log(prabhu);
 
 const dev = Object.assign({},prabhu)
 const dev2 = JSON.parse(JSON.stringify(prabhu))
